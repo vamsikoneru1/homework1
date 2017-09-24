@@ -95,7 +95,7 @@ public class Login {
 	
 	public String registration(){
 		
-		if(this.email.contains("@") && this.phonenumber.length()==10 && this.email.contains(".com")&& this.phonenumber.contains("*[0-9]"))
+		if(this.email.contains("@")  && (this.email.contains(".com")||this.email.contains(".edu"))&& this.phonenumber.matches("[0-9]{10}"))
 		{
 			
 			return "regsuc";
